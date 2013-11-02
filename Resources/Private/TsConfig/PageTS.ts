@@ -128,4 +128,4 @@ TCEMAIN.permissions {
 }
 
 ## you want special styling and classes to show up in the RTE
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:dmf_template/Resources/Private/TsConfig/RteConfig.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_bootstrap_render/Resources/Private/TsConfig/RteConfig.ts">

@@ -1,5 +1,16 @@
 RTE.classes {
-
+    align-left {
+        name = LLL:EXT:rtehtmlarea/htmlarea/locallang_tooltips.xml:justifyleft
+        value = text-align: left;
+    }
+    align-center {
+        name = LLL:EXT:rtehtmlarea/htmlarea/locallang_tooltips.xml:justifycenter
+        value = text-align: center;
+    }
+    align-right {
+        name = LLL:EXT:rtehtmlarea/htmlarea/locallang_tooltips.xml:justifyright
+        value = text-align: right;
+    }
 }
 
 
@@ -69,11 +80,11 @@ RTE.default {
     useCSS = 1
 
     ## Add styles Left, center and right alignment of text in paragraphs and cells.
-    #inlineStyle.text-alignment (
-    #        p.align-left, h1.align-left, h2.align-left, h3.align-left, h4.align-left, h5.align-left, h6.align-left, td.align-left { text-align: left; }
-    #        p.align-center, h1.align-center, h2.align-center, h3.align-center, h4.align-center, h5.align-center, h6.align-center, td.align-center { text-align: center; }
-    #        p.align-right, h1.align-right, h2.align-right, h3.align-right, h4.align-right, h5.align-right, h6.align-right, td.align-right { text-align: right; }
-    #)
+    inlineStyle.text-alignment (
+        p.align-left, h1.align-left, h2.align-left, h3.align-left, h4.align-left, h5.align-left, h6.align-left, td.align-left { text-align: left; }
+        p.align-center, h1.align-center, h2.align-center, h3.align-center, h4.align-center, h5.align-center, h6.align-center, td.align-center { text-align: center; }
+        p.align-right, h1.align-right, h2.align-right, h3.align-right, h4.align-right, h5.align-right, h6.align-right, td.align-right { text-align: right; }
+    )
 
     ## Use stylesheet file rather than the above mainStyleOverride and inlineStyle properties to style the contents (htmlArea RTE only)
     ignoreMainStyleOverride = 1
@@ -134,9 +145,8 @@ RTE.default {
             keepPDIVattribs = align,class,style,id,span
 
             # List all class selectors that are allowed on the way to the database
-            allowedClasses (
-                    green
-            )
+            allowedClasses < RTE.default.buttons.blockstyle.tags.div.allowedClasses
+            #allowedClasses = text-right,text-left,text-center
 
             # html parser einstellungen
             HTMLparser_rte {
