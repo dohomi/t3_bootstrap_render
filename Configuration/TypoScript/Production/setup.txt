@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_bootstrap_render/Resources/Private/TypoScript/Setup/include_files.ts">
