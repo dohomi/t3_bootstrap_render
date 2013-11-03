@@ -2,6 +2,9 @@
 lib.stdheader.5.prefixComment >
 lib.stdheader.stdWrap.prefixComment >
 
+# remove unnecessary class inside header tag
+lib.stdheader.stdWrap.dataWrap.override = <header class="text-header">|</header>
+
 # for bootstrap panels two additional classes included. The closing panel-tag is included in the tt_content wrap
 lib.stdheader.stdWrap.outerWrap = <div class="panel-heading">|</div><div class="panel-body">
 lib.stdheader.stdWrap.outerWrap.if {
@@ -9,10 +12,10 @@ lib.stdheader.stdWrap.outerWrap.if {
     isInList.field = layout
 }
 
-# adjust header alignment
+# remove unnecessary alignment class
 lib.stdheader.3.headerClass.cObject.10.noTrimWrap = | | |
 
-# remove firstHeader secondHeader etc. class
+# remove nth header class
 lib.stdheader.3.headerClass.cObject.20 >
 
 # add panel-heading if layout panel

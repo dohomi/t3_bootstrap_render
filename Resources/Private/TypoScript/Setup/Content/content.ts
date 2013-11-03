@@ -21,7 +21,6 @@ tt_content {
             # responsive hide/show classes
             cObject = CASE
             cObject {
-                    #stdWrap.noTrimWrap = |<div class="element |">|</div>|
                     key.field = section_frame
 
                     30 = TEXT
@@ -49,48 +48,6 @@ tt_content {
 
 
     stdWrap.innerWrap.cObject {
-        /*
-        default.20.40 = CASE
-        default.20.40 {
-            key.field = layout
-
-            21 = TEXT
-            21.value = alert alert-success
-            22 = TEXT
-            22.value = alert alert-info
-            23 = TEXT
-            23.value = alert alert-warning
-            24 = TEXT
-            24.value = alert alert-danger
-
-            31 = TEXT
-            31.value = jumbotron
-
-            41 = TEXT
-            41.value = well
-            41 = TEXT
-            41.value = well well-lg
-            42 = TEXT
-            42.value = well well-sm
-
-            51 = TEXT
-            51.value = panel panel-default
-            52 = TEXT
-            52.value = panel panel-primary
-            53 = TEXT
-            53.value = panel panel-info
-            54 = TEXT
-            54.value = panel panel-warning
-            55 = TEXT
-            55.value = panel panel-danger
-
-            61 = TEXT
-            61.value = bordered-box
-
-            62 = TEXT
-            62.value = bordered-box bordered-box-special
-        }
-        */
         default.30.cObject.default.cObject = CASE
         default.30.cObject.default.cObject {
             key.field = layout
@@ -138,24 +95,8 @@ tt_content {
         }
     }
 
-    # add bootstrap image class
-    image.20 {
-        border >
-        addClassesImage.override.cObject = CASE
-        addClassesImage.override.cObject {
-            key.field = imageborder
-            1 = TEXT
-            1.value = img-rounded-wrap
-            2 = TEXT
-            2.value = img-circle-wrap
-            3 = TEXT
-            3.value = img-thumbnail-wrap
-            4 = TEXT
-            4.value = img-responsive-wrap
 
-        }
-    }
 }
 
 # wrap the rte content into csc-text wrap
-tt_content.text.wrap = <div class="csc-text-only">|</div>
+tt_content.text.wrap = <div class="text-content">|</div>
