@@ -100,3 +100,13 @@ tt_content {
 
 # wrap the rte content into csc-text wrap
 tt_content.text.wrap = <div class="text-content">|</div>
+
+# adjust the header in textpic that panel still works
+tt_content.textpic {
+    10 >
+    10 = < lib.stdheader
+
+
+    20.text.10 >
+}
+

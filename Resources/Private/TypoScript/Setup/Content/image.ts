@@ -19,28 +19,28 @@ tt_content.image.20 {
 
     layout {
         # above-center
-        default.value = <div class="textpic-image-above###CLASSES###">###IMAGES######TEXT###</div>
+        default.value = <div class="textpic-image-above">###IMAGES######TEXT###</div>
         # above-right
         1 < .default
         # above-left
         2 < .default
 
         # below-center
-        8.value = <div class="textpic-image-below###CLASSES###">###TEXT######IMAGES###</div>
+        8.value = <div class="textpic-image-below">###TEXT######IMAGES###</div>
         # below-right
         9 < .8
         # below-left
         10 < .8
 
         # intext-right
-        17.value = <div class="media media-inline###CLASSES###"><div class="pull-right">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
+        17.value = <div class="media media-inline"><div class="pull-right">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
         # intext-left
-        18.value = <div class="media media-inline###CLASSES###"><div class="pull-left">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
+        18.value = <div class="media media-inline"><div class="pull-left">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
 
         # intext-right-nowrap
-        25.value = <div class="media###CLASSES###"><div class="pull-right">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
+        25.value = <div class="media"><div class="pull-right">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
         # intext-left-nowrap
-        26.value = <div class="media###CLASSES###"><div class="pull-left">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
+        26.value = <div class="media"><div class="pull-left">###IMAGES###</div><div class="media-body">###TEXT###</div></div>
     }
 
     rendering {
@@ -86,6 +86,8 @@ tt_content.image.20 {
                 5.value = <div class="image-column col-sm-5###CLASSES###"> | </div>
                 6 = TEXT
                 6.value = <div class="image-column col-sm-6###CLASSES###"> | </div>
+                12 = TEXT
+                12.value = <div class="image-column col-sm-12###CLASSES###"> | </div>
             }
 
         }
@@ -105,3 +107,45 @@ tt_content.image.20 {
     }
 }
 
+tt_content.textpic {
+    20.layout {
+        # intext-right-nowrap
+        25 = COA
+        25 {
+            10 = TEXT
+            10 {
+                insertData = 1
+                data = field:tx_t3bootstrap_column
+                stdWrap.wrap = 12 - |
+                prioriCalc = intval
+                wrap = <div class="row"><div class="col-sm-|">###TEXT###</div>
+            }
+            20 = TEXT
+            20 {
+                insertData = 1
+                data = field:tx_t3bootstrap_column
+                wrap = <div class="col-sm-|">###IMAGES###</div></div>
+            }
+        }
+        # intext-left-nowrap
+        26 = COA
+        26 {
+            10 = TEXT
+            10 {
+                insertData = 1
+                data = field:tx_t3bootstrap_column
+                wrap = <div class="row"><div class="col-sm-|">###IMAGES###</div>
+            }
+            20 = TEXT
+            20 {
+                insertData = 1
+                data = field:tx_t3bootstrap_column
+                stdWrap.wrap = 12 - |
+                prioriCalc = intval
+                wrap = <div class="col-sm-|">###TEXT###</div></div>
+            }
+        }
+
+    }
+
+}

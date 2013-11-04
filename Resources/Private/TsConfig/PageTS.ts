@@ -1,12 +1,14 @@
 TCEFORM.tt_content {
 
+
+
     # section_frame.disabled = 1
     # header_position.disabled = 1
+    # layout.disabled = 1
     # colPos.disabled = 1
     date.disabled = 1
     linkToTop.disabled = 1
-    # layout.disabled = 1
-
+    image_noRows.disabled = 1
 
     # Header
     header_layout.altLabels {
@@ -31,11 +33,23 @@ TCEFORM.tt_content {
 
     # imgorient remove items
     imageorient {
-        removeItems = 0,1,8,9
+        #removeItems = 0,1,8,9
     }
 
-    # remove last items because it changed to col-md-*
+    # remove last items because it changed to col-sm-*
     imagecols {
+        label.default = Column grid of each image
+        altLabels {
+            1 = col-sm-1
+            2 = col-sm-2
+            3 = col-sm-3
+            4 = col-sm-4
+            5 = col-sm-5
+            6 = col-sm-6
+        }
+        addItems {
+            12 = col-sm-12
+        }
         removeItems = 7,8
     }
 
