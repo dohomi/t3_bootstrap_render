@@ -4,9 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/6.1/Production', 'T3 Bootstrap 6.1 production');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/6.1/Development', 'T3 Bootstrap 6.1 develop');
-
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/6.1', 'T3 Bootstrap 6.1');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/PageTS.ts">');
 
