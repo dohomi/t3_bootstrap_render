@@ -106,7 +106,6 @@ tt_content.textpic {
     10 >
     10 = < lib.stdheader
 
-
     20.text.10 >
 }
 

@@ -39,6 +39,7 @@ TCEFORM.tt_content {
     # remove last items because it changed to col-sm-*
     imagecols {
         label.default = Column grid of each image
+        label.de = Grid für jedes Bild
         altLabels {
             1 = col-sm-1
             2 = col-sm-2
@@ -116,6 +117,7 @@ TCEFORM.pages {
     alias.disabled = 1
     categories.disabled = 1
     shortcut_mode.removeItems = 0
+    keywords.disabled = 1
 
     # Backend Layouts
     # backend_layout.PAGE_TSCONFIG_ID >
