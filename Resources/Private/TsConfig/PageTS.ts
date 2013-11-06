@@ -88,7 +88,8 @@ TCEFORM.tt_content {
                 22 = Box Info
                 23 = Box Warning
                 24 = Box Danger
-                31 = Jombotron
+                31 = Jumbotron
+                32 = Jumbotron full width
                 41 = Well
                 42 = Well Large
                 43 = Well Small

@@ -66,6 +66,8 @@ tt_content {
 
             31 = TEXT
             31.value = ><div class="jumbotron">|</div></div>
+            32 = TEXT
+            32.value = ><div class="jumbotron"><div class="container">|</div></div></div>
 
             41 = TEXT
             41.value = ><div class="well">|</div></div>
