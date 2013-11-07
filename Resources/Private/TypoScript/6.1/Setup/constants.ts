@@ -3,6 +3,8 @@
 plugin.t3_bootstrap_render {
     # remove css of css_styled_content
     disableCssStyle = 1
-    # enables page layout to serve as meta robots
+    # enables meta robots
     enableMetaRobots = 1
+    # enable img-responsive class for image rendering
+    enableImgResponsive = 1
 }

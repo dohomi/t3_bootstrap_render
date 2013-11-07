@@ -1,6 +1,13 @@
 
 # image rendering
 tt_content.image.20 {
+
+    imgObjNum.1{
+        params = class="wursti"
+        override.dataWrap = class="wursti" aria-describedby="csc-longdesc-{field:uid}-{register:IMAGE_NUM_CURRENT}"
+    }
+
+
     border >
     addClassesImage =
     addClassesImage.override.cObject = CASE
@@ -14,7 +21,6 @@ tt_content.image.20 {
         3.value = img-thumbnail-wrap
         4 = TEXT
         4.value = img-responsive-wrap
-
     }
 
     layout {
@@ -62,7 +68,7 @@ tt_content.image.20 {
             }
 
             singleStdWrap {
-                wrap.override = <figure class="image-figure###CLASSES###"> | </figure>
+                wrap.override = <figure class="image-figure###CLASSES###">|</figure>
             }
         }
 
@@ -147,5 +153,7 @@ tt_content.textpic {
         }
 
     }
-
 }
+[globalVar = LIT:1 = {$plugin.t3_bootstrap_render.enableImgResponsive}]
+tt_content.image.20.rendering.singleNoCaption.singleStdWrap.wrap.override = <figure class="image-figure img-responsive-wrap###CLASSES###">|</figure>
+[global]
