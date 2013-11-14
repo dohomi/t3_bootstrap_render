@@ -46,21 +46,3 @@ $tmp_column = array(
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tmp_column, 1);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('tt_content', 'imageblock', 'tx_t3bootstrap_column', 'after:imagecols');
-
-$tmp_column = array(
-	'tx_t3bootstrap_crawler' => array(
-		'exclude' => 1,
-		'label' => 'Meta Crawler',
-		'config' => array(
-			'type' => 'select',
-			'items' => array(
-				array('Index Follow', 0),
-				array('Index Nofollow', 1),
-				array('Noindex Follow', 2),
-				array('Noindex Nofollow', 3),
-			),
-		)
-	)
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $tmp_column, 1);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('pages', 'metatags', 'tx_t3bootstrap_crawler', 'after:description');

@@ -1,7 +1,4 @@
 TCEFORM.tt_content {
-
-
-
     # section_frame.disabled = 1
     # header_position.disabled = 1
     # layout.disabled = 1
