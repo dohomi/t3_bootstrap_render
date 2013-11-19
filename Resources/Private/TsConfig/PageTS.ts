@@ -114,7 +114,7 @@ TCEFORM.tt_content {
 TCEFORM.pages {
     alias.disabled = 1
     categories.disabled = 1
-    shortcut_mode.removeItems = 0
+    # shortcut_mode.removeItems = 0
     keywords.disabled = 1
 
     # Backend Layouts
