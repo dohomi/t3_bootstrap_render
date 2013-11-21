@@ -99,6 +99,7 @@ TCEFORM.tt_content {
                 61 = Bordered Box
                 62 = Bordered Box special
                 71 = Page Header
+                81 = Container
 
         }
     }

@@ -1,7 +1,5 @@
 lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.addAttributes.P.class >
 
-
-
 tt_content {
 
     stdWrap.prefixComment >
@@ -94,6 +92,8 @@ tt_content {
             62 = TEXT
             62.value = ><div class="bordered-box bordered-box-special">|</div></div>
 
+            81 = TEXT
+            81.value = ><div class="container">|</div></div>
         }
     }
 
