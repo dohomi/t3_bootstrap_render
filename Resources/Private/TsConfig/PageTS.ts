@@ -130,17 +130,7 @@ tx_news.templateLayouts {
         2 = TEST
 }
 
-#-------------------------------------------------------------------------------
-#        Permissions
-#-------------------------------------------------------------------------------
-TCEMAIN.permissions {
-        # owner
-        #userid = 1
-        # group
-        # groupid < lib.constants.permissions.groupid
-        # all rights for group
-        #group = 31
-}
+
 
 ## you want special styling and classes to show up in the RTE
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_bootstrap_render/Resources/Private/TsConfig/RteConfig.ts">
