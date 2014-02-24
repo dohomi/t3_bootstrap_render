@@ -100,8 +100,13 @@ tt_content {
 
 }
 
-# wrap the rte content into csc-text wrap
+# wrap the rte content into csc-text wrap, only if not panel
 tt_content.text.wrap = <div class="text-content">|</div>
+tt_content.text.wrap.if {
+    value = 51,52,53,54,55
+    isInList.field = layout
+    negate = 1
+}
 
 # adjust the header in textpic that panel still works
 tt_content.textpic {
